@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: rgba(240, 242, 245, 0.7); /* Increased transparency for body background */
+            background-color: rgba(240, 242, 245, 0.6); /* More transparency for body background */
             background-image: url('https://www.freightwaves.com/uploads/2022/07/shutterstock_2169006455-e1658929345847.jpg');
             background-size: cover;
             background-position: center center;
@@ -43,7 +43,7 @@
         .container {
             max-width: 900px;
             margin: 80px auto;
-            background: rgba(255, 255, 255, 0.9); /* Slight transparency for container */
+            background: rgba(255, 255, 255, 0.85); /* Slightly more transparent for container */
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -59,6 +59,15 @@
             color: #2c3e50;
             font-weight: 700;
             text-transform: uppercase;
+        }
+
+        /* Title size adjustment */
+        .section-title {
+            font-size: 2rem; /* Smaller size for section titles */
+            color: #2c3e50;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
         h2 .cn {
@@ -91,7 +100,6 @@
 
         .resources li i {
             margin-right: 15px;
-            color: #2980b9;
             font-size: 1.5rem;
         }
 
@@ -200,12 +208,11 @@
 
     <!-- Navigating the Yard Section -->
     <div class="navigating-yard">
-        <h2 class="section-title"><i class="fas fa-map-signs"></i> Navigating the Yard</h2>
+        <h2 class="section-title"><i class="fas fa-map-signs" style="color: #2980b9;"></i> Navigating the Yard</h2>
         <ul class="resources">
-            <!-- Did You Know? and Directions to your Container Combined -->
-            <li><i class="fas fa-lightbulb" style="color: #f39c12;"></i> <strong>Did you know?</strong> If you enter 'CN BIT' + your stack location, for example 'CN BIT N070WD' in Google Maps, it will show the route to that stack? Click on the link below to try it out:</li>
-            <li><i class="fas fa-truck"></i><a href="https://www.google.com/maps/dir/?api=1&origin=&destination=CN+BIT" target="_blank">Directions to your Container</a></li>
-            <li><i class="fas fa-map"></i><a href="https://www.cn.ca/-/media/files/our-services/intermodal/cn-brampton-yard-map-en.pdf" target="_blank">Download the Yard Map</a></li>
+            <!-- Combined Did You Know? and Directions to Container in One Entry -->
+            <li><i class="fas fa-lightbulb" style="color: #f39c12;"></i> <strong>Did you know?</strong> If you enter 'CN BIT' + your stack location, for example 'CN BIT N070WD' in Google Maps, it will show the route to that stack. <a href="https://www.google.com/maps/dir/?api=1&origin=&destination=CN+BIT+N070WD" target="_blank">Click here to try it out!</a></li>
+            <li><i class="fas fa-map" style="color: #2980b9;"></i><a href="https://www.cn.ca/-/media/files/our-services/intermodal/cn-brampton-yard-map-en.pdf" target="_blank">Download the Yard Map</a></li>
         </ul>
     </div>
 
@@ -214,12 +221,12 @@
 
     <!-- Safety and Emergency Resources Section -->
     <div class="safety-resources">
-        <h2 class="section-title"><i class="fas fa-shield-alt"></i> Safety and Emergency Resources</h2>
+        <h2 class="section-title"><i class="fas fa-shield-alt" style="color: #27ae60;"></i> Safety and Emergency Resources</h2>
         <ul class="resources">
-            <li><i class="fas fa-video"></i><a href="https://vimeo.com/684811338?api=1&player_id=video-frame-CustomerSafetyAct2&title=0&byline=0&portrait=0&color=ffffff" target="_blank">Watch the Intermodal Safety Procedures Video</a></li>
-            <li><i class="fas fa-exclamation-triangle"></i><a href="https://example.com/resource3" target="_blank">Directions to Muster Points in Case of Safety Emergencies</a></li>
-            <li><i class="fas fa-clipboard-list"></i><a href="https://www.cn.ca/-/media/files/our-services/intermodal/cn-brampton-yard-rules-en.pdf" target="_blank">Critical Yard Safety Rules</a></li>
-            <li><i class="fas fa-phone-alt"></i><a href="https://example.com/contact" target="_blank">Emergency Contact - CN Police</a></li>
+            <li><i class="fas fa-video" style="color: #8e44ad;"></i><a href="https://vimeo.com/684811338?api=1&player_id=video-frame-CustomerSafetyAct2&title=0&byline=0&portrait=0&color=ffffff" target="_blank">Watch the Intermodal Safety Procedures Video</a></li>
+            <li><i class="fas fa-exclamation-triangle" style="color: #e74c3c;"></i><a href="https://example.com/resource3" target="_blank">Directions to Muster Points in Case of Safety Emergencies</a></li>
+            <li><i class="fas fa-clipboard-list" style="color: #2980b9;"></i><a href="https://www.cn.ca/-/media/files/our-services/intermodal/cn-brampton-yard-rules-en.pdf" target="_blank">Critical Yard Safety Rules</a></li>
+            <li><i class="fas fa-phone-alt" style="color: #f39c12;"></i><a href="https://www.cn.ca/en/contact-us" target="_blank">Emergency Contact - CN Police</a></li>
         </ul>
     </div>
 </div>
