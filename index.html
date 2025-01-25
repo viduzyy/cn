@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f0f2f5;
+            background-color: rgba(240, 242, 245, 0.8); /* Slight transparency for body background */
             background-image: url('https://www.freightwaves.com/uploads/2022/07/shutterstock_2169006455-e1658929345847.jpg');
             background-size: cover;
             background-position: center center;
@@ -132,6 +132,8 @@
             body {
                 font-size: 1rem;
                 padding: 20px;
+                background-size: cover; /* Ensures the background image covers the whole screen */
+                background-position: center center; /* Keeps it centered */
             }
 
             .container {
@@ -161,6 +163,8 @@
         @media screen and (max-width: 480px) {
             body {
                 font-size: 0.95rem;
+                background-size: cover; /* Ensures the background image covers the whole screen */
+                background-position: center center; /* Keeps it centered */
             }
 
             h1 {
