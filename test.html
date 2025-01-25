@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railroad Resources - CN Brampton Yard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f0f2f5;
+            background-image: url('https://www.freightwaves.com/uploads/2022/07/shutterstock_2169006455-e1658929345847.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        /* Train animation */
+        @keyframes train-animation {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .train {
+            position: absolute;
+            top: 30px; /* Adjust vertical position */
+            left: -100%;
+            width: 300px;
+            height: 60px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Train_animated_gif_2.gif/400px-Train_animated_gif_2.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: train-animation 10s linear infinite;
+        }
+
+        /* Title Styling inside container */
+        .container {
+            max-width: 900px;
+            margin: 80px auto;
+            background: rgba(255, 255, 255, 0.9); /* Slight transparency for container */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        h2 {
+            font-size: 3rem;
+            color: #2c3e50;
+        }
+
+        h2 .cn {
+            color: red; /* Color the 'CN' part in red */
+        }
+
+        p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .resources {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .resources li {
+            margin: 20px 0;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .resources li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .resources a {
+            text-decoration: none;
+            color: #2980b9;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .resources a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1rem;
+            color: #7f8c8d;
+        }
+
+        footer p {
+            font-size: 0.8rem; /* Decreased font size for footer text */
+        }
+
+        footer a {
+            color: #7f8c8d;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #2980b9;
+        }
+
+        /* Mobile adjustments */
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 1rem;
+                padding: 20px;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 2rem;
+                margin-top: -10px;
+            }
+
+            p {
+                font-size: 1.1rem;
+                margin-bottom: 30px;
+            }
+
+            .resources a {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                font-size: 0.95rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .resources a {
+                font-size: 1rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Train animation -->
+<div class="train"></div>
+
+<!-- Title Section inside container -->
+<div class="container">
+    <div class="title">
+        <h1>Welcome To</h1>
+        <h2><span class="cn">CN</span> Brampton Intermodal Terminal</h2>
+    </div>
+
+    <p>Here you will find essential links and resources required to navigate the yard safely and efficiently:</p>
+
+    <!-- Navigating the Yard Section -->
+    <div class="navigating-yard">
+        <h2 class="section-title">Navigating the Yard</h2>
+        <ul class="resources">
+            <li><a href="https://example.com/resource1" target="_blank">Directions for Container Drop</a></li>
+            <li><a href="https://example.com/resource2" target="_blank">Directions for Container Pickup</a></li>
+            <li><a href="https://example.com/resource1" target="_blank">Directions to the Nearest Driver Assistance Booth</a></li>
+            <li><a href="https://example.com/contact" target="_blank">Download the Yard Map</a></li>
+        </ul>
+    </div>
+
+    <!-- Divider between sections -->
+    <div class="section-divider"></div>
+
+    <!-- Safety and Emergency Resources Section -->
+    <div class="safety-resources">
+        <h2 class="section-title">Safety and Emergency Resources</h2>
+        <ul class="resources">
+            <li><a href="https://example.com/resource3" target="_blank">Directions to Muster Points in Case of Safety Emergencies</a></li>
+            <li><a href="https://example.com/contact" target="_blank">Critical Yard Safety Rules</a></li>
+            <li><a href="https://example.com/contact" target="_blank">Emergency Contact - CN Police</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 CN. All Rights Reserved. | <a href="https://example.com/privacy-policy">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>
